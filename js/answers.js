@@ -143,6 +143,32 @@ const bondFilms = [
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
 
+bondFilms[0].gross = 1108561008;
+bondFilms[1].gross = 1014941117;
+bondFilms[2].gross = 912257512;
+bondFilms[3].gross = 825110761;
+bondFilms[4].gross = 756544419;
+bondFilms[5].gross = 692713752;
+bondFilms[6].gross = 669789482;
+bondFilms[7].gross = 655872400;
+bondFilms[8].gross = 648514469;
+bondFilms[9].gross = 622246378;
+bondFilms[10].gross = 576277964;
+bondFilms[11].gross = 543639638;
+bondFilms[12].gross = 529548711;
+bondFilms[13].gross = 505899782;
+bondFilms[14].gross = 491617153;
+bondFilms[15].gross = 486468881;
+bondFilms[16].gross = 478946402;
+bondFilms[17].gross = 448249281;
+bondFilms[18].gross = 440759072;
+bondFilms[19].gross = 426244352;
+bondFilms[20].gross = 381088866;
+bondFilms[21].gross = 321172633;
+bondFilms[22].gross = 285157191;
+
+
+
 console.log(bondFilms);
 console.log("---BREAK---");
 let bondTitles = [];
@@ -158,8 +184,15 @@ for (let key in bondFilms) {
   }
 };
 
+const totalGross = () => {
+  let sum = 0;
+  for (let key in bondFilms) {
+    sum += bondFilms[key].gross;
+  }
+  return sum
+};
 
-
+console.log(totalGross());
 
 
 
