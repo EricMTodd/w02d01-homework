@@ -152,6 +152,12 @@ for (let key in bondFilms) {
 
 console.log(bondTitles);
 
+for (let key in bondFilms) {
+  if (bondFilms[key].year % 2 === 1) {
+    console.log(bondFilms[key].year);
+  }
+};
+
 
 
 
